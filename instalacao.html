@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instalação do Ambiente — PadilhaSec</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/article.css" />
+</head>
+
+<body>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <a href="python.html" class="topbar-back" title="Voltar ao módulo">
+      <svg viewBox="0 0 20 20" fill="none" width="18" height="18">
+        <path d="M12 15L7 10L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+    <a href="index.html" class="topbar-logo">
+      <svg viewBox="0 0 28 28" fill="none">
+        <rect width="28" height="28" rx="6" fill="#00c8ff" fill-opacity=".12" />
+        <path d="M10 13V10a4 4 0 0 1 8 0v3" stroke="#00c8ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="7" y="13" width="14" height="10" rx="2.5" fill="#7c3aed" fill-opacity=".25" stroke="#7c3aed" stroke-width="1.5"/>
+        <circle cx="14" cy="18" r="1.5" fill="#00c8ff"/>
+        <rect x="13.2" y="18" width="1.6" height="2.5" rx=".8" fill="#00c8ff"/>
+      </svg>
+      <span class="topbar-title">Padilha<span>Sec</span></span>
+    </a>
+    <div class="topbar-right">
+      <span class="topbar-module">Módulo: Python Essentials</span>
+    </div>
+  </header>
+
+  <div class="page-wrap">
+
+    <!-- SIDEBAR / ÍNDICE -->
+    <aside class="article-sidebar">
+      <div class="sidebar-label">Índice do Artigo</div>
+
+      <a href="#intro" class="toc-item active">
+        <span class="toc-pin">📍</span>
+        <span class="toc-text">Introdução</span>
+      </a>
+      <a href="#lista" class="toc-item">
+        <span class="toc-pin">🔗</span>
+        <span class="toc-text">O que vamos instalar</span>
+      </a>
+      <a href="#python" class="toc-item">
+        <span class="toc-pin">📍</span>
+        <span class="toc-text">Instalando o Python</span>
+      </a>
+      <a href="#vscode" class="toc-item">
+        <span class="toc-pin">📍</span>
+        <span class="toc-text">Instalando o VSCode</span>
+      </a>
+      <a href="#ext-python" class="toc-item">
+        <span class="toc-pin">📍</span>
+        <span class="toc-text">Extensão Python</span>
+      </a>
+      <a href="#ext-jupyter" class="toc-item">
+        <span class="toc-pin">📍</span>
+        <span class="toc-text">Extensão Jupyter</span>
+      </a>
+      <a href="#ext-opcionais" class="toc-item">
+        <span class="toc-pin">📍</span>
+        <span class="toc-text">Extensões Opcionais</span>
+      </a>
+      <a href="#conclusao" class="toc-item">
+        <span class="toc-pin">📍</span>
+        <span class="toc-text">Conclusão</span>
+      </a>
+    </aside>
+
+    <!-- ARTIGO -->
+    <main class="article-main">
+
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="index.html">Início</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="python.html">Python Essentials</a>
+        <span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-current">Aula 0 — Instalação do Ambiente</span>
+      </div>
+
+      <!-- Header -->
+      <span class="article-eyebrow">Aula 0 · Configuração do Ambiente</span>
+      <h1 class="article-title" id="intro">
+        <span id="intro-anchor" class="section-anchor"></span>
+        Como Instalar Python, VSCode e Jupyter Notebook Para Programar do Zero
+      </h1>
+      <p class="article-lead">
+        Antes de começarmos a programar de verdade, precisamos preparar nosso ambiente de desenvolvimento.
+        Neste artigo você vai aprender passo a passo como instalar tudo que será necessário para programar
+        em Python da forma correta, mesmo que nunca tenha mexido com programação antes.
+      </p>
+
+      <!-- Lista do que vamos instalar -->
+      <span class="section-anchor" id="lista"></span>
+      <div class="install-list">
+        <div class="install-list-title">Lista do que vamos instalar:</div>
+        <ul>
+          <li>Python</li>
+          <li>VSCode</li>
+          <li>Extensão Python</li>
+          <li>Extensão Jupyter</li>
+          <li>Extensões Adicionais</li>
+        </ul>
+      </div>
+
+      <!-- ── SEÇÃO: Python ───────────────────────────────────────── -->
+      <section class="article-section">
+        <span class="section-anchor" id="python"></span>
+        <div class="section-title-line">
+          <span class="section-pin">📍</span>
+          <h2 class="section-heading">Instalando o Python</h2>
+        </div>
+
+        <div class="prose">
+          <p>
+            O primeiro passo para começarmos nossa jornada na programação com Python é instalar a linguagem
+            em nosso computador.
+          </p>
+          <p>
+            Para isso, acesse o site oficial do Python e realize o download da versão estável mais recente
+            disponível. Utilizar a versão mais atual garante que você terá acesso aos recursos mais modernos
+            da linguagem, além de correções de segurança e melhorias de desempenho importantes para o
+            desenvolvimento.
+          </p>
+        </div>
+
+        <div class="callout callout-info">
+          <span class="callout-icon">🔗</span>
+          <div class="callout-body">
+            <strong>Site para o Download:</strong>
+            <a href="https://www.python.org/downloads/" target="_blank" rel="noopener" class="link-styled">
+              python.org/downloads — Clique Aqui
+            </a>
+          </div>
+        </div>
+
+        <div class="prose">
+          <p>Clique em <strong>Downloads</strong> como a IMAGEM 1 sugere.</p>
+        </div>
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">IMAGEM 1 — Página de Download do Python</div>
+          <div class="img-placeholder-hint">Adicione a imagem aqui</div>
+        </div>
+
+        <div class="prose">
+          <p>Escolha o Sistema Operacional que estiver utilizando, como na IMAGEM 2.</p>
+        </div>
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">IMAGEM 2 — Escolha do Sistema Operacional</div>
+          <div class="img-placeholder-hint">Adicione a imagem aqui</div>
+        </div>
+
+        <div class="callout callout-info">
+          <span class="callout-icon">🔦</span>
+          <div class="callout-body">
+            Neste artigo, estarei demonstrando a instalação utilizando o sistema operacional <strong>Windows</strong>.
+            Caso você utilize Linux ou qualquer outro sistema operacional, basta selecionar a opção
+            correspondente ao seu sistema na IMAGEM 2.
+          </div>
+        </div>
+
+        <div class="prose">
+          <p>
+            Após isso, você terá duas opções principais de versão para instalar, como mostra a IMAGEM 3.
+            A primeira é a versão mais recente lançada. A segunda é a versão estável/recomendada, geralmente
+            indicada para usuários que preferem maior compatibilidade.
+          </p>
+          <p>
+            Sugiro que você pesquise rapidamente sobre a diferença entre ambas antes de escolher, para entender
+            melhor qual atende seu objetivo. Para fins de aprendizado inicial, as diferenças práticas entre elas
+            normalmente não são significativas para iniciantes.
+          </p>
+        </div>
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">IMAGEM 3 — Versões disponíveis para download</div>
+          <div class="img-placeholder-hint">Adicione a imagem aqui</div>
+        </div>
+
+        <div class="callout callout-warn">
+          <span class="callout-icon">⚠️</span>
+          <div class="callout-body">
+            <strong>Atenção na hora da instalação:</strong> antes de clicar em instalar, marque a opção
+            <strong>"Add Python to PATH"</strong>, como indica a IMAGEM 4. Essa configuração permitirá que
+            seu sistema operacional reconheça o Python corretamente, evitando diversos problemas futuros ao
+            executar comandos pelo terminal.
+          </div>
+        </div>
+
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">IMAGEM 4 — Marcar "Add Python to PATH"</div>
+          <div class="img-placeholder-hint">Adicione a imagem aqui</div>
+        </div>
+
+        <div class="prose">
+          <p>
+            Após marcar essa opção, prossiga normalmente com a instalação até sua conclusão —
+            o famoso <strong>"Next, Next, Next"</strong>, como demonstra a IMAGEM 5.
+          </p>
+        </div>
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">IMAGEM 5 — Processo de instalação (Next, Next, Next)</div>
+          <div class="img-placeholder-hint">Adicione a imagem aqui</div>
+        </div>
+
+        <div class="prose">
+          <p>
+            Após finalizar a instalação, é importante confirmar se o Python foi instalado corretamente.
+            Para isso, abra o <strong>CMD</strong> (Prompt de Comando) ou qualquer terminal de sua preferência
+            e execute um dos seguintes comandos:
+          </p>
+        </div>
+
+        <div class="code-block">
+          <div class="code-block-header">Terminal / CMD</div>
+          <pre>python --version
+py --version</pre>
+        </div>
+
+        <div class="prose">
+          <p>
+            Se tudo estiver correto, o terminal deverá retornar a versão instalada do Python,
+            indicando que sua instalação foi realizada com sucesso, como indica a IMAGEM 7.
+          </p>
+        </div>
+
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">IMAGEM 6 — Abrindo o terminal / CMD</div>
+          <div class="img-placeholder-hint">Adicione a imagem aqui</div>
+        </div>
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">IMAGEM 7 — Versão do Python retornada no terminal</div>
+          <div class="img-placeholder-hint">Adicione a imagem aqui</div>
+        </div>
+      </section>
+
+      <!-- ── SEÇÃO: VSCode ───────────────────────────────────────── -->
+      <section class="article-section">
+        <span class="section-anchor" id="vscode"></span>
+        <div class="section-title-line">
+          <span class="section-pin">📍</span>
+          <h2 class="section-heading">Instalando o VSCode</h2>
+        </div>
+
+        <div class="prose">
+          <p>
+            Com o Python devidamente instalado e validado, nosso próximo passo será instalar o
+            <strong>VSCode (Visual Studio Code)</strong>. O VSCode é um editor de código profissional
+            amplamente utilizado por programadores no mundo inteiro, sendo uma das ferramentas mais
+            populares atualmente para desenvolvimento de software.
+          </p>
+          <p>
+            Ele será o ambiente que utilizaremos para escrever, organizar e executar nossos códigos
+            durante toda nossa jornada de aprendizado com Python.
+          </p>
+        </div>
+
+        <div class="callout callout-info">
+          <span class="callout-icon">🔗</span>
+          <div class="callout-body">
+            <strong>Site para o Download:</strong>
+            <a href="https://code.visualstudio.com/" target="_blank" rel="noopener" class="link-styled">
+              code.visualstudio.com — Clique Aqui
+            </a>
+          </div>
+        </div>
+
+        <div class="prose">
+          <p>
+            Dentro do site, selecione a versão correspondente ao seu sistema operacional e realize
+            normalmente o download, como mostra a IMAGEM 8.
+          </p>
+          <p>
+            Após isso, execute o instalador e prossiga com a instalação padrão até sua conclusão —
+            novamente o famoso <strong>"Next, Next, Next"</strong>.
+          </p>
+        </div>
+
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">IMAGEM 8 — Download do VSCode</div>
+          <div class="img-placeholder-hint">Adicione a imagem aqui</div>
+        </div>
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">IMAGEM 9 — Instalação do VSCode</div>
+          <div class="img-placeholder-hint">Adicione a imagem aqui</div>
+        </div>
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">IMAGEM 10 — VSCode aberto após instalação</div>
+          <div class="img-placeholder-hint">Adicione a imagem aqui</div>
+        </div>
+      </section>
+
+      <!-- ── SEÇÃO: Extensão Python ─────────────────────────────── -->
+      <section class="article-section">
+        <span class="section-anchor" id="ext-python"></span>
+        <div class="section-title-line">
+          <span class="section-pin">📍</span>
+          <h2 class="section-heading">Instalando a Extensão Python</h2>
+        </div>
+
+        <div class="prose">
+          <p>
+            Após concluir a instalação do VSCode, precisamos preparar o editor para reconhecer e trabalhar
+            corretamente com a linguagem Python. Para isso, instalaremos a extensão oficial do Python,
+            disponibilizada pela própria <strong>Microsoft</strong> dentro da loja de extensões do VSCode.
+          </p>
+          <p>Essa extensão adiciona diversos recursos importantes ao editor:</p>
+        </div>
+
+        <div class="callout callout-success">
+          <span class="callout-icon">✅</span>
+          <div class="callout-body">
+            → Reconhecimento de sintaxe da linguagem<br/>
+            → Sugestões automáticas de código<br/>
+            → Integração com o interpretador Python<br/>
+            → Ferramentas de depuração<br/>
+            → Execução facilitada de scripts
+          </div>
+        </div>
+
+        <div class="prose">
+          <p>
+            Para instalá-la, abra o VSCode e clique no menu lateral de <strong>Extensões</strong>,
+            ou utilize o atalho <strong>Ctrl + Shift + X</strong>. Em seguida, pesquise por
+            <strong>Python</strong>, localize a extensão oficial desenvolvida pela Microsoft e clique em
+            <strong>Install</strong>.
+          </p>
+        </div>
+
+        <div class="callout callout-warn">
+          <span class="callout-icon">☝️</span>
+          <div class="callout-body">
+            <strong>Observação:</strong> no meu caso, o botão aparece como "Switch to Pre-Release Version"
+            porque já possuo o Python instalado. Na sua primeira instalação, aparecerá apenas o botão
+            <strong>Install</strong>, que é a opção correta.
+          </div>
+        </div>
+
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">IMAGEM 11 — Extensão Python no VSCode</div>
+          <div class="img-placeholder-hint">Adicione a imagem aqui</div>
+        </div>
+      </section>
+
+      <!-- ── SEÇÃO: Extensão Jupyter ────────────────────────────── -->
+      <section class="article-section">
+        <span class="section-anchor" id="ext-jupyter"></span>
+        <div class="section-title-line">
+          <span class="section-pin">📍</span>
+          <h2 class="section-heading">Instalando a Extensão Jupyter</h2>
+        </div>
+
+        <div class="prose">
+          <p>
+            Com a extensão do Python devidamente instalada, nosso próximo passo será adicionar também a
+            extensão <strong>Jupyter</strong> ao VSCode. Essa extensão permite utilizar arquivos interativos
+            conhecidos como <strong>Notebooks</strong>, onde podemos executar códigos em blocos separados,
+            facilitando muito o aprendizado e os testes durante a programação.
+          </p>
+          <p>
+            Para instalar, abra novamente a aba de Extensões com <strong>Ctrl + Shift + X</strong>,
+            pesquise por <strong>Jupyter</strong>, selecione a versão oficial da Microsoft e clique em
+            <strong>Install</strong>.
+          </p>
+        </div>
+
+        <div class="callout callout-warn">
+          <span class="callout-icon">☝️</span>
+          <div class="callout-body">
+            <strong>Observação:</strong> assim como na extensão anterior, no meu caso o botão aparece
+            diferente por já ter o ambiente configurado. Na sua primeira instalação aparecerá o botão
+            <strong>Install</strong> normalmente. Não se preocupe com pequenas diferenças visuais.
+          </div>
+        </div>
+
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">IMAGEM 12 — Extensão Jupyter no VSCode</div>
+          <div class="img-placeholder-hint">Adicione a imagem aqui</div>
+        </div>
+      </section>
+
+      <!-- ── SEÇÃO: Extensões Opcionais ────────────────────────── -->
+      <section class="article-section">
+        <span class="section-anchor" id="ext-opcionais"></span>
+        <div class="section-title-line">
+          <span class="section-pin">📍</span>
+          <h2 class="section-heading">Extensões Opcionais Recomendadas</h2>
+        </div>
+
+        <div class="prose">
+          <p>
+            Além das extensões principais, existem algumas extensões adicionais que melhora bastante
+            a experiência durante os estudos e no dia a dia como programador.
+          </p>
+        </div>
+
+        <div class="ext-grid">
+          <div class="ext-card">
+            <div class="ext-name">🎨 Dracula Theme Official</div>
+            <div class="ext-desc">Altera o tema visual do VSCode, deixando o editor mais moderno e agradável durante longos períodos de estudo.</div>
+          </div>
+          <div class="ext-card">
+            <div class="ext-name">📁 Material Icon Theme</div>
+            <div class="ext-desc">Altera os ícones das pastas e arquivos, tornando a interface mais organizada e intuitiva.</div>
+          </div>
+          <div class="ext-card">
+            <div class="ext-name">⚙️ Python Indent</div>
+            <div class="ext-desc">Auxilia automaticamente na indentação correta de códigos Python, essencial para iniciantes.</div>
+          </div>
+          <div class="ext-card">
+            <div class="ext-name">🌐 Python Environments</div>
+            <div class="ext-desc">Facilita o gerenciamento de ambientes Python. Muito útil quando começar a usar ambientes virtuais.</div>
+          </div>
+          <div class="ext-card">
+            <div class="ext-name">🐛 Python Debugger</div>
+            <div class="ext-desc">Permite executar seu programa em modo de debug, facilitando a identificação de erros e comportamentos inesperados.</div>
+          </div>
+          <div class="ext-card">
+            <div class="ext-name">🧠 Pylance</div>
+            <div class="ext-desc">Melhora drasticamente a inteligência do editor com autocompletar avançado, validação de código e sugestões inteligentes.</div>
+          </div>
+        </div>
+
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">IMAGEM 13 — Dracula Theme</div>
+          <div class="img-placeholder-hint">Adicione a imagem aqui</div>
+        </div>
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">IMAGEM 14 — Material Icon Theme</div>
+          <div class="img-placeholder-hint">Adicione a imagem aqui</div>
+        </div>
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">IMAGEM 15 — Python Indent</div>
+          <div class="img-placeholder-hint">Adicione a imagem aqui</div>
+        </div>
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">IMAGEM 16 — Python Environments</div>
+          <div class="img-placeholder-hint">Adicione a imagem aqui</div>
+        </div>
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">IMAGEM 17 — Python Debugger</div>
+          <div class="img-placeholder-hint">Adicione a imagem aqui</div>
+        </div>
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">IMAGEM 18 — Pylance</div>
+          <div class="img-placeholder-hint">Adicione a imagem aqui</div>
+        </div>
+      </section>
+
+      <!-- ── CONCLUSÃO ───────────────────────────────────────────── -->
+      <span class="section-anchor" id="conclusao"></span>
+      <div class="conclusion-block">
+        <h3>📍 Conclusão do Primeiro Passo</h3>
+        <p>
+          Parabéns, o primeiro passo da sua jornada foi concluído com sucesso. Seu ambiente de
+          desenvolvimento agora está totalmente preparado e pronto para que possamos iniciar nossos
+          estudos práticos em Python nos próximos conteúdos.
+        </p>
+        <p>
+          A partir dos próximos tópicos, começaremos de fato a entrar no universo da programação,
+          aprendendo conceitos, fundamentos e diversos ensinamentos importantes sobre a linguagem Python.
+        </p>
+        <p>
+          Lembre-se: não desista no primeiro obstáculo. Programação é uma habilidade construída com
+          constância, prática e repetição. No começo tudo pode parecer complexo e difícil, mas isso é
+          completamente normal para qualquer pessoa que esteja iniciando.
+        </p>
+        <p>
+          Um pequeno progresso diário, quando acumulado ao longo de meses e anos, pode gerar resultados
+          gigantescos no futuro. Trate seu aprendizado como um trabalho de formiguinha: um passo de cada
+          vez, um pouco por dia, sempre evoluindo.
+        </p>
+        <p>Nos vemos no próximo artigo. 🚀</p>
+      </div>
+
+      <!-- Navegação inferior -->
+      <div class="article-nav">
+        <a href="python.html" class="btn-art-nav">← Voltar ao módulo</a>
+        <a href="python.html" class="btn-art-nav next">Próxima aula: Olá, Python! →</a>
+      </div>
+
+    </main>
+  </div>
+
+  <script>
+    // Highlight sidebar item on scroll
+    const anchors = document.querySelectorAll('.section-anchor[id]');
+    const tocItems = document.querySelectorAll('.toc-item');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      anchors.forEach(a => {
+        if (window.scrollY >= a.offsetTop - 120) current = a.id;
+      });
+      tocItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href') === '#' + current) item.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
