@@ -164,27 +164,6 @@ body {
 }
 .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
 
-/* ─── STATS ──────────────────────────────────────────────────────────────── */
-.stats {
-  max-width: 1100px; margin: 0 auto;
-  padding: 0 40px 80px;
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
-}
-
-.stat-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 24px;
-  text-align: center;
-}
-.stat-value {
-  font-size: 32px; font-weight: 800;
-  color: var(--accent); letter-spacing: -1px;
-  margin-bottom: 4px;
-}
-.stat-label { font-size: 13px; color: var(--muted); }
-
 /* ─── MODULES ────────────────────────────────────────────────────────────── */
 .modules-section {
   max-width: 1100px; margin: 0 auto;
