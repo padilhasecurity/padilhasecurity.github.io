@@ -25,6 +25,7 @@ html, body {
 
 /* Fundo blueprint: grade branca sobre azul-marinho */
 body {
+  min-height: 100vh;
   background-color: var(--bg);
   background-image:
     radial-gradient(ellipse at 50% 30%, transparent 0%, rgba(3,10,24,.55) 100%),

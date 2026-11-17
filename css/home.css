@@ -26,6 +26,7 @@ html, body {
 
 /* Fundo blueprint: grade branca sobre azul-marinho */
 body {
+  min-height: 100vh;
   background-color: var(--bg);
   background-image:
     radial-gradient(ellipse at 50% 30%, transparent 0%, rgba(3,10,24,.55) 100%),
@@ -167,7 +168,7 @@ body {
 .stats {
   max-width: 1100px; margin: 0 auto;
   padding: 0 40px 80px;
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
 }
 
 .stat-card {
